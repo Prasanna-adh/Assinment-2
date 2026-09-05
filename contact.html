@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechAssist - Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1 class="logo">TechAssist</h1>
+
+            <button id="menuButton" class="menu-button">
+                ☰
+            </button>
+
+            <ul id="navMenu" class="nav-menu">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <button id="themeButton" class="theme-button">
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h2>Get IT Support</h2>
+
+            <p>
+                Tell us about your technology problem
+                and our team will get back to you.
+            </p>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="contact-info">
+
+                <h2>Contact TechAssist</h2>
+
+                <p>
+                    Need help with your computer,
+                    network or software?
+                </p>
+
+                <p>📧 support@techassist.com</p>
+
+                <p>📞 0405 679 276</p>
+
+                <p>📍 Canberra, Australia</p>
+            </div>
+
+
+            <form id="contactForm">
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+
+                <label for="issue">IT Issue</label>
+
+                <select id="issue" name="issue">
+
+                    <option value="">
+                        Select an issue
+                    </option>
+
+                    <option value="computer">
+                        Computer Problem
+                    </option>
+
+                    <option value="network">
+                        Network / Wi-Fi
+                    </option>
+
+                    <option value="security">
+                        Cybersecurity
+                    </option>
+
+                    <option value="software">
+                        Software Problem
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label for="message">Describe Your Problem</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Describe your IT problem..."
+                ></textarea>
+
+
+                <button type="submit" class="button">
+                    Submit Request
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2026 TechAssistPrasana. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+/* BASIC SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #222;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+}
+
+.nav-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu li {
+    margin: 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-button,
+.theme-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* HERO */
+
+.hero {
+    background-color: #dbeafe;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* SECTIONS */
+
+.about,
+.services-preview,
+.why-us,
+.all-services,
+.contact-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* SERVICE CARDS */
+
+.service-grid,
+.features,
+.all-services {
+    display: grid;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.learn-button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.extra-info {
+    display: none;
+}
+
+.extra-info.show {
+    display: block;
+}
+
+
+/* PAGE HEADER */
+
+.page-header {
+    text-align: center;
+    background-color: #dbeafe;
+    padding: 50px 20px;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-info,
+form {
+    background-color: white;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* DARK MODE */
+
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+body.dark .service-card,
+body.dark .contact-info,
+body.dark form {
+    background-color: #333;
+}
+
+
+/* TABLET */
+
+@media (min-width: 600px) {
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .all-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 900px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 0 15px;
+    }
+
+    .all-services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
